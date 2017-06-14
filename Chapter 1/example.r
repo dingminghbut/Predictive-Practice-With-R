@@ -46,7 +46,7 @@ preData=preData[-c(123,79),]
 
 #分离训练集与测试集
 trainData=preData[1:150,]
-testData=preData[151:163,]
+testData=preData[151:161,]
 
 #建立模型
 lm.fit<-lm(DstValue~Month+RecentVal1+RecentVal4+RecentVal6+RecentVal8+RecentVal12,data=trainData)
